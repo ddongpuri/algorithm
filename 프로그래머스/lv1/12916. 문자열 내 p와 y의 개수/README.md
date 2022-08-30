@@ -58,3 +58,16 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+
+------
+
+다른 사람의 풀이 
+```java
+class Solution {
+    boolean solution(String s) {
+        s = s.toUpperCase();
+
+        return s.chars().filter( e -> 'P'== e).count() == s.chars().filter( e -> 'Y'== e).count();
+    }
+}
+```
