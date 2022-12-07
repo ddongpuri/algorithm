@@ -6,8 +6,8 @@ public class Main {
 
     int a = sc.nextInt();
     int b = sc.nextInt();
-    int gcd = 0;
-    int lcm = 0;
+    int gcd = 0; // 최대공약수(Greatest common divisor) 
+    int lcm = 0; // 최소공배수(Least common multiple)
 
     for (int i = 1; i <= Math.min(a, b); i++) {
       if ((a % i == 0) && (b % i == 0)) {
