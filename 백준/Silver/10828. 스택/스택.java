@@ -16,35 +16,28 @@ public class Main {
 
       command = sc.next();
 
-      if(command.equals("push")) {
-        stack.push(sc.nextInt());
-        continue;
+      switch (command) {
+              
+          case "push":
+          stack.push(sc.nextInt());
+          continue;
 
-      } else if (command.equals("pop")) {
-        if (stack.isEmpty()) {
-          sb.append(-1);
-        } else {
-          sb.append(stack.pop());  
-        }
+          case "pop":
+          sb.append(stack.isEmpty()? -1 : stack.pop());
+          break;
+              
+          case "size":
+          sb.append(stack.size());
+          break;    
 
-      } else if (command.equals("size")) {
-        sb.append(stack.size());
+          case "empty":
+          sb.append(stack.isEmpty()? 1 : 0);
+          break;    
 
-      } else if (command.equals("empty")) {
-        if (stack.isEmpty()) {
-          sb.append(1);
-        } else {
-          sb.append(0);
-        }
-
-      } else if (command.equals("top")) {
-        if (stack.isEmpty()) {
-          sb.append(-1);
-        } else {
-          sb.append(stack.peek());
-        }
+          case "top":
+          sb.append(stack.isEmpty()? -1 : stack.peek());
+          break;    
       }
-
       sb.append("\n");
     }
 
