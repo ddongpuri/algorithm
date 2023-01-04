@@ -6,7 +6,9 @@ class Solution {
         int width;
         int total = brown + yellow;
         
-        for (int i = 3; i <= total / 2; i++) {
+        
+        for (int i = 3; i * i <= total; i++) {
+        //for (int i = 3; i <= total / 2; i++) {
             
             width = total / i;
             length = i;
