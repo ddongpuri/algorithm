@@ -13,7 +13,10 @@ class Solution {
         int lim = (int)Math.sqrt(num);
         
         // 3. 에라토스테네스의 체에 따라 limit까지만 배수 여부를 확인한다. 
-        for (int i = 2; i<=lim; i++) 
+        // for (int i = 2; i<=lim; i++) 
+        //     if (num % i == 0) return false;
+        
+        for (int i = 2; i * i <= num; i++)
             if (num % i == 0) return false;
         
         return true;
