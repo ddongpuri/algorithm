@@ -1,8 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -23,7 +22,7 @@ public class Main {
     m = Integer.parseInt(stk.nextToken());
     int sum = 0;
 
-    list = new LinkedList<>();
+    list = new ArrayList<>();
 
     for (int i = 0; i < n; i++) {
       int a = Integer.parseInt(br.readLine());
