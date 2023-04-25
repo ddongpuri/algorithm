@@ -10,8 +10,8 @@ class Solution {
             map.put(cloth[1], map.getOrDefault(cloth[1], 0) + 1);
         }
         
-        for (String key : map.keySet()) {
-            answer *= (map.get(key) + 1);
+        for (Integer count : map.values()) {
+            answer *= (count + 1);
         }
         
         return answer - 1;
